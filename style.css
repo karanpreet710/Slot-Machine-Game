@@ -1,0 +1,80 @@
+:root
+{
+    --speed:5;
+}
+
+body{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+h1 
+{
+    font-family: Georgia, sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.machine {
+    background-color: peru;
+    border: 3px dashed brown;
+    height: 300px;
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    /* z-index: 5; */
+}
+
+#inpSpeed{
+    font-size: 30pt;
+    width: 100px;
+}
+
+.slot {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-color: beige;
+    border: 2px solid darkblue;
+    text-align: center;
+    font-size: 100pt;
+    line-height: 250px;
+    /* z-index: 1; */
+    overflow: hidden;
+}
+
+.slot > .value{
+    display: inline-block;
+    /* z-index: 3; */
+}
+
+.animate{
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s/var(--speed));
+}
+
+#bt1,#bt2
+{
+    display: inline-block;
+}
+
+#container
+{
+    width: 900px;
+    margin: 50px auto;
+}
+
+#container div{
+    display: inline-block;
+}
+
+@keyframes slotspin{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}

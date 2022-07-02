@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>SLOT MACHINE GAME</h1>
+    <div class="machine">
+        <div class="slot" id="slot1">
+            <span class="value" id="value1">😁</span>
+        </div>
+        <div class="slot" id="slot2">
+            <span class="value" id="value2">😭</span>
+        </div>
+        <div class="slot" id="slot3">
+            <span class="value" id="value3">😇</span>
+        </div>
+    </div>
+    <div id="container">
+        <div class="col-md-1 p-1 m-2">
+            <button class="btn btn-success col" id="start">
+                START
+            </button>
+        </div>
+        <div class="col-md-1 p-1 m-2">
+            <button class="btn btn-danger col" id="stop">
+                STOP
+            </button>
+        </div>
+        <div class="col-md-1 p-1 m-2">
+            <input id="inpSpeed" type="number" min="1" max="10">
+        </div>
+    </div>
+</body>
+
+</html>
